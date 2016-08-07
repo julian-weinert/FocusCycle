@@ -8,9 +8,10 @@
 
 #import <AppKit/AppKit.h>
 
-@interface CycleWindows : NSObject
+@interface JFWFocusCycle : NSObject
+
+@property (nonatomic, strong, readonly) NSBundle *bundle;
 
 + (instancetype)sharedPlugin;
 
-@property (nonatomic, strong, readonly) NSBundle* bundle;
 @end

@@ -7,23 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CBCB04B01D577F65004AF707 /* CycleWindows.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = CBCB04AF1D577F65004AF707 /* CycleWindows.xcscheme */; };
-		CBCB04B31D577F65004AF707 /* CycleWindows.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB04B21D577F65004AF707 /* CycleWindows.m */; };
+		CBCB04B31D577F65004AF707 /* JFWFocusCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB04B21D577F65004AF707 /* JFWFocusCycle.m */; };
+		CBCB04D21D579326004AF707 /* FocusCycle.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = CBCB04D11D579326004AF707 /* FocusCycle.xcscheme */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CBCB04AB1D577F65004AF707 /* CycleWindows.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CycleWindows.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
-		CBCB04AF1D577F65004AF707 /* CycleWindows.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = CycleWindows.xcscheme; path = CycleWindows.xcodeproj/xcshareddata/xcschemes/CycleWindows.xcscheme; sourceTree = SOURCE_ROOT; };
-		CBCB04B11D577F65004AF707 /* CycleWindows.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleWindows.h; sourceTree = "<group>"; };
-		CBCB04B21D577F65004AF707 /* CycleWindows.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleWindows.m; sourceTree = "<group>"; };
+		CBCB04AB1D577F65004AF707 /* FocusCycle.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FocusCycle.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBCB04B11D577F65004AF707 /* JFWFocusCycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFWFocusCycle.h; sourceTree = "<group>"; };
+		CBCB04B21D577F65004AF707 /* JFWFocusCycle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFWFocusCycle.m; sourceTree = "<group>"; };
 		CBCB04B41D577F65004AF707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBCB04D11D579326004AF707 /* FocusCycle.xcscheme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = FocusCycle.xcscheme; path = FocusCycle.xcodeproj/xcshareddata/xcschemes/FocusCycle.xcscheme; sourceTree = SOURCE_ROOT; };
+		CBCB04D31D579450004AF707 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file; path = .gitignore; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		CBCB04A31D577F65004AF707 = {
 			isa = PBXGroup;
 			children = (
-				CBCB04AD1D577F65004AF707 /* CycleWindows */,
+				CBCB04AD1D577F65004AF707 /* FocusCycle */,
 				CBCB04AC1D577F65004AF707 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -31,26 +32,27 @@
 		CBCB04AC1D577F65004AF707 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBCB04AB1D577F65004AF707 /* CycleWindows.xcplugin */,
+				CBCB04AB1D577F65004AF707 /* FocusCycle.xcplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CBCB04AD1D577F65004AF707 /* CycleWindows */ = {
+		CBCB04AD1D577F65004AF707 /* FocusCycle */ = {
 			isa = PBXGroup;
 			children = (
-				CBCB04B11D577F65004AF707 /* CycleWindows.h */,
-				CBCB04B21D577F65004AF707 /* CycleWindows.m */,
+				CBCB04B11D577F65004AF707 /* JFWFocusCycle.h */,
+				CBCB04B21D577F65004AF707 /* JFWFocusCycle.m */,
 				CBCB04B41D577F65004AF707 /* Info.plist */,
 				CBCB04AE1D577F65004AF707 /* Supporting Files */,
 			);
-			path = CycleWindows;
+			path = FocusCycle;
 			sourceTree = "<group>";
 		};
 		CBCB04AE1D577F65004AF707 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CBCB04AF1D577F65004AF707 /* CycleWindows.xcscheme */,
+				CBCB04D31D579450004AF707 /* .gitignore */,
+				CBCB04D11D579326004AF707 /* FocusCycle.xcscheme */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -58,9 +60,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CBCB04AA1D577F65004AF707 /* CycleWindows */ = {
+		CBCB04AA1D577F65004AF707 /* FocusCycle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CBCB04B71D577F65004AF707 /* Build configuration list for PBXNativeTarget "CycleWindows" */;
+			buildConfigurationList = CBCB04B71D577F65004AF707 /* Build configuration list for PBXNativeTarget "FocusCycle" */;
 			buildPhases = (
 				CBCB04A81D577F65004AF707 /* Sources */,
 				CBCB04A91D577F65004AF707 /* Resources */,
@@ -69,9 +71,9 @@
 			);
 			dependencies = (
 			);
-			name = CycleWindows;
+			name = FocusCycle;
 			productName = CycleWindows;
-			productReference = CBCB04AB1D577F65004AF707 /* CycleWindows.xcplugin */;
+			productReference = CBCB04AB1D577F65004AF707 /* FocusCycle.xcplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -80,6 +82,7 @@
 		CBCB04A41D577F65004AF707 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JFW;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Julian Weinert Softwareentwicklung";
 				TargetAttributes = {
@@ -88,7 +91,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CBCB04A71D577F65004AF707 /* Build configuration list for PBXProject "CycleWindows" */;
+			buildConfigurationList = CBCB04A71D577F65004AF707 /* Build configuration list for PBXProject "FocusCycle" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -100,7 +103,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CBCB04AA1D577F65004AF707 /* CycleWindows */,
+				CBCB04AA1D577F65004AF707 /* FocusCycle */,
 			);
 		};
 /* End PBXProject section */
@@ -110,7 +113,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBCB04B01D577F65004AF707 /* CycleWindows.xcscheme in Resources */,
+				CBCB04D21D579326004AF707 /* FocusCycle.xcscheme in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBCB04B31D577F65004AF707 /* CycleWindows.m in Sources */,
+				CBCB04B31D577F65004AF707 /* JFWFocusCycle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,10 +218,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
-				INFOPLIST_FILE = CycleWindows/Info.plist;
+				INFOPLIST_FILE = FocusCycle/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
-				PRODUCT_BUNDLE_IDENTIFIER = de.julianweinert.CycleWindows;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = de.julianweinert.FocusCycle;
+				PRODUCT_NAME = FocusCycle;
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Debug;
@@ -229,10 +232,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
-				INFOPLIST_FILE = CycleWindows/Info.plist;
+				INFOPLIST_FILE = FocusCycle/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
-				PRODUCT_BUNDLE_IDENTIFIER = de.julianweinert.CycleWindows;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = de.julianweinert.FocusCycle;
+				PRODUCT_NAME = FocusCycle;
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Release;
@@ -240,7 +243,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CBCB04A71D577F65004AF707 /* Build configuration list for PBXProject "CycleWindows" */ = {
+		CBCB04A71D577F65004AF707 /* Build configuration list for PBXProject "FocusCycle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBCB04B51D577F65004AF707 /* Debug */,
@@ -249,13 +252,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CBCB04B71D577F65004AF707 /* Build configuration list for PBXNativeTarget "CycleWindows" */ = {
+		CBCB04B71D577F65004AF707 /* Build configuration list for PBXNativeTarget "FocusCycle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CBCB04B81D577F65004AF707 /* Debug */,
 				CBCB04B91D577F65004AF707 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

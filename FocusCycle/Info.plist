@@ -38,14 +38,10 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2016 Julian Weinert Softwareentwicklung. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>CycleWindows</string>
+	<string>JFWFocusCycle</string>
 	<key>XC4Compatible</key>
 	<true/>
 	<key>XCPluginHasUI</key>
 	<false/>
-	<key>me.delisa.XcodePluginBase.AllowedLoaders</key>
-	<array>
-		<string>com.apple.dt.Xcode</string>
-	</array>
 </dict>
 </plist>
