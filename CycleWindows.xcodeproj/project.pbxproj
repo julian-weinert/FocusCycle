@@ -1,0 +1,263 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBCB04B01D577F65004AF707 /* CycleWindows.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = CBCB04AF1D577F65004AF707 /* CycleWindows.xcscheme */; };
+		CBCB04B31D577F65004AF707 /* CycleWindows.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB04B21D577F65004AF707 /* CycleWindows.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CBCB04AB1D577F65004AF707 /* CycleWindows.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CycleWindows.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBCB04AF1D577F65004AF707 /* CycleWindows.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = CycleWindows.xcscheme; path = CycleWindows.xcodeproj/xcshareddata/xcschemes/CycleWindows.xcscheme; sourceTree = SOURCE_ROOT; };
+		CBCB04B11D577F65004AF707 /* CycleWindows.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CycleWindows.h; sourceTree = "<group>"; };
+		CBCB04B21D577F65004AF707 /* CycleWindows.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CycleWindows.m; sourceTree = "<group>"; };
+		CBCB04B41D577F65004AF707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		CBCB04A31D577F65004AF707 = {
+			isa = PBXGroup;
+			children = (
+				CBCB04AD1D577F65004AF707 /* CycleWindows */,
+				CBCB04AC1D577F65004AF707 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBCB04AC1D577F65004AF707 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB04AB1D577F65004AF707 /* CycleWindows.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBCB04AD1D577F65004AF707 /* CycleWindows */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB04B11D577F65004AF707 /* CycleWindows.h */,
+				CBCB04B21D577F65004AF707 /* CycleWindows.m */,
+				CBCB04B41D577F65004AF707 /* Info.plist */,
+				CBCB04AE1D577F65004AF707 /* Supporting Files */,
+			);
+			path = CycleWindows;
+			sourceTree = "<group>";
+		};
+		CBCB04AE1D577F65004AF707 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBCB04AF1D577F65004AF707 /* CycleWindows.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBCB04AA1D577F65004AF707 /* CycleWindows */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBCB04B71D577F65004AF707 /* Build configuration list for PBXNativeTarget "CycleWindows" */;
+			buildPhases = (
+				CBCB04A81D577F65004AF707 /* Sources */,
+				CBCB04A91D577F65004AF707 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CycleWindows;
+			productName = CycleWindows;
+			productReference = CBCB04AB1D577F65004AF707 /* CycleWindows.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBCB04A41D577F65004AF707 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Julian Weinert Softwareentwicklung";
+				TargetAttributes = {
+					CBCB04AA1D577F65004AF707 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CBCB04A71D577F65004AF707 /* Build configuration list for PBXProject "CycleWindows" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CBCB04A31D577F65004AF707;
+			productRefGroup = CBCB04AC1D577F65004AF707 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBCB04AA1D577F65004AF707 /* CycleWindows */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBCB04A91D577F65004AF707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCB04B01D577F65004AF707 /* CycleWindows.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBCB04A81D577F65004AF707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCB04B31D577F65004AF707 /* CycleWindows.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CBCB04B51D577F65004AF707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CBCB04B61D577F65004AF707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CBCB04B81D577F65004AF707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = CycleWindows/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_BUNDLE_IDENTIFIER = de.julianweinert.CycleWindows;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		CBCB04B91D577F65004AF707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = CycleWindows/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_BUNDLE_IDENTIFIER = de.julianweinert.CycleWindows;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBCB04A71D577F65004AF707 /* Build configuration list for PBXProject "CycleWindows" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBCB04B51D577F65004AF707 /* Debug */,
+				CBCB04B61D577F65004AF707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBCB04B71D577F65004AF707 /* Build configuration list for PBXNativeTarget "CycleWindows" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBCB04B81D577F65004AF707 /* Debug */,
+				CBCB04B91D577F65004AF707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBCB04A41D577F65004AF707 /* Project object */;
+}
