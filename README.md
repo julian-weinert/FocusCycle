@@ -1,7 +1,7 @@
 # FocusCycle Xcode Plugin
 
 FocusCycle is a very simple Xcode plugin that adds two menu items to the window menu.
-With the help of these items – and their shortcut companions `⌘^` and `⌘⇧^` – you can quickly cycle through multiple open Xcode windows.
+With the help of these items you can quickly cycle through multiple open Xcode windows.
 
 
 ## Install
@@ -13,9 +13,15 @@ With the help of these items – and their shortcut companions `⌘^` and `⌘�
 
 ## Usage
 
-Window → Focus Previous Window ⌘⇧^
-Window → Focus Next Window ⌘^
+Use either one of the two new menu items:
 
+ | |
+---|---
+Window → Focus Previous Window|⌘⇧^
+Window → Focus Next Window|⌘^
+
+*The shortcuts refer to the ISO QWERTZ keyboard layout. On QWERTY and other keyboard layouts the shortcut may differ.*
+*Always use the key left next to the "1" and below the "escape" keys.* 
 
 ## Screenshot
 
