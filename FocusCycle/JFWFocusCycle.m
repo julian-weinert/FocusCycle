@@ -7,6 +7,32 @@
 //
 
 #import "JFWFocusCycle.h"
+#include <Carbon/Carbon.h>
+
+CFStringRef createStringForKey(CGKeyCode keyCode) {
+	TISInputSourceRef currentKeyboard = TISCopyCurrentKeyboardInputSource();
+	CFDataRef layoutData = TISGetInputSourceProperty(currentKeyboard, kTISPropertyUnicodeKeyLayoutData);
+	const UCKeyboardLayout *keyboardLayout = (const UCKeyboardLayout *)CFDataGetBytePtr(layoutData);
+	
+	UInt32 keysDown = 0;
+	UniChar chars[4];
+	UniCharCount realLength;
+	
+	UCKeyTranslate(keyboardLayout,
+				   keyCode,
+				   kUCKeyActionDisplay,
+				   0,
+				   LMGetKbdType(),
+				   kUCKeyTranslateNoDeadKeysBit,
+				   &keysDown,
+				   sizeof(chars) / sizeof(chars[0]),
+				   &realLength,
+				   chars);
+	
+	CFRelease(currentKeyboard);
+	
+	return CFStringCreateWithCharacters(kCFAllocatorDefault, chars, 1);
+}
 
 @interface JFWFocusCycle () <NSMenuDelegate>
 
@@ -64,8 +90,11 @@ static JFWFocusCycle *sharedPlugin;
 		NSUInteger separatorIndex = [[windowMenuItem submenu] indexOfItemWithTitle:@"Show Previous Tab"] + 1;
 		[windowSubMenu insertItem:[NSMenuItem separatorItem] atIndex:separatorIndex];
 		
-		[self setPreviousWindowItem:[[NSMenuItem alloc] initWithTitle:@"Focus Previous Window" action:@selector(focusPreviousWindow) keyEquivalent:@"^"]];
-		[self setNextWindowItem:[[NSMenuItem alloc] initWithTitle:@"Focus Next Window" action:@selector(focusNextWindow) keyEquivalent:@"^"]];
+		int keyID = KBGetLayoutType(LMGetKbdType()) == kKeyboardISO ? kVK_ISO_Section : kVK_ANSI_Grave;
+		NSString *keyEquivalent = (__bridge NSString *)createStringForKey(keyID);
+		
+		[self setPreviousWindowItem:[[NSMenuItem alloc] initWithTitle:@"Focus Previous Window" action:@selector(focusPreviousWindow) keyEquivalent:keyEquivalent]];
+		[self setNextWindowItem:[[NSMenuItem alloc] initWithTitle:@"Focus Next Window" action:@selector(focusNextWindow) keyEquivalent:keyEquivalent]];
 		
 		[[self previousWindowItem] setKeyEquivalentModifierMask:NSCommandKeyMask | NSShiftKeyMask];
 		[[self nextWindowItem] setKeyEquivalentModifierMask:NSCommandKeyMask];
@@ -85,10 +114,12 @@ static JFWFocusCycle *sharedPlugin;
 
 - (BOOL)validateMenuItem:(NSMenuItem *)menuItem {
 	if (menuItem == [self previousWindowItem]) {
-		return [[self windows] indexOfObject:[NSApp keyWindow]] > 0;
+		NSUInteger keyIndex = [[self windows] indexOfObject:[NSApp keyWindow]];
+		return keyIndex != NSNotFound && keyIndex > 0;
 	}
 	else if (menuItem == [self nextWindowItem]) {
-		return [[self windows] indexOfObject:[NSApp keyWindow]] < ([[self windows] count] - 1);
+		NSUInteger keyIndex = [[self windows] indexOfObject:[NSApp keyWindow]];
+		return keyIndex != NSNotFound && keyIndex < ([[self windows] count] - 1);
 	}
 	return NO;
 }

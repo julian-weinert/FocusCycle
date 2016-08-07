@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CBCB04B31D577F65004AF707 /* JFWFocusCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCB04B21D577F65004AF707 /* JFWFocusCycle.m */; };
-		CBCB04D21D579326004AF707 /* FocusCycle.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = CBCB04D11D579326004AF707 /* FocusCycle.xcscheme */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,8 +15,7 @@
 		CBCB04B11D577F65004AF707 /* JFWFocusCycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFWFocusCycle.h; sourceTree = "<group>"; };
 		CBCB04B21D577F65004AF707 /* JFWFocusCycle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFWFocusCycle.m; sourceTree = "<group>"; };
 		CBCB04B41D577F65004AF707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBCB04D11D579326004AF707 /* FocusCycle.xcscheme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = FocusCycle.xcscheme; path = FocusCycle.xcodeproj/xcshareddata/xcschemes/FocusCycle.xcscheme; sourceTree = SOURCE_ROOT; };
-		CBCB04D31D579450004AF707 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		CBCB04D31D579450004AF707 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -52,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				CBCB04D31D579450004AF707 /* .gitignore */,
-				CBCB04D11D579326004AF707 /* FocusCycle.xcscheme */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -113,7 +110,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBCB04D21D579326004AF707 /* FocusCycle.xcscheme in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
