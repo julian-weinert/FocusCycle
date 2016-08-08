@@ -11,6 +11,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB82A5171D58BBA8007B9314 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = SOURCE_ROOT; };
+		CB82A5181D58BBA8007B9314 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		CBCB04AB1D577F65004AF707 /* FocusCycle.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FocusCycle.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCB04B11D577F65004AF707 /* JFWFocusCycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFWFocusCycle.h; sourceTree = "<group>"; };
 		CBCB04B21D577F65004AF707 /* JFWFocusCycle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFWFocusCycle.m; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 			isa = PBXGroup;
 			children = (
 				CBCB04D31D579450004AF707 /* .gitignore */,
+				CB82A5171D58BBA8007B9314 /* LICENSE.txt */,
+				CB82A5181D58BBA8007B9314 /* README.md */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
