@@ -31,6 +31,7 @@ Window → Focus Next Window|⌘^|⌘⇧§
 
 ## Bugs and limitations
 
+- Support for chinese, japanese and other keyboards is unknown
 
 ### Pull requests
 
