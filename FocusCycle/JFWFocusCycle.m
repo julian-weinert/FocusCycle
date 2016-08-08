@@ -94,15 +94,16 @@ static JFWFocusCycle *sharedPlugin;
 		NSString *keyEquivalent = (__bridge NSString *)createStringForKey(keyID);
 		
 		[self setPreviousWindowItem:[[NSMenuItem alloc] initWithTitle:@"Focus Previous Window" action:@selector(focusPreviousWindow) keyEquivalent:keyEquivalent]];
-		[self setNextWindowItem:[[NSMenuItem alloc] initWithTitle:@"Focus Next Window" action:@selector(focusNextWindow) keyEquivalent:keyEquivalent]];
-		
 		[[self previousWindowItem] setKeyEquivalentModifierMask:NSCommandKeyMask | NSShiftKeyMask];
-		[[self nextWindowItem] setKeyEquivalentModifierMask:NSCommandKeyMask];
-		
 		[[self previousWindowItem] setTarget:self];
-		[[self nextWindowItem] setTarget:self];
 		
 		[[windowMenuItem submenu] insertItem:[self previousWindowItem] atIndex:++separatorIndex];
+		
+		
+		[self setNextWindowItem:[[NSMenuItem alloc] initWithTitle:@"Focus Next Window" action:@selector(focusNextWindow) keyEquivalent:keyEquivalent]];
+		[[self nextWindowItem] setKeyEquivalentModifierMask:NSCommandKeyMask];
+		[[self nextWindowItem] setTarget:self];
+		
 		[[windowMenuItem submenu] insertItem:[self nextWindowItem] atIndex:++separatorIndex];
 		
 		return YES;
@@ -113,30 +114,32 @@ static JFWFocusCycle *sharedPlugin;
 }
 
 - (BOOL)validateMenuItem:(NSMenuItem *)menuItem {
-	if (menuItem == [self previousWindowItem]) {
+	if (menuItem == [self nextWindowItem] || menuItem == [self previousWindowItem]) {
 		NSUInteger keyIndex = [[self windows] indexOfObject:[NSApp keyWindow]];
-		return keyIndex != NSNotFound && keyIndex > 0;
-	}
-	else if (menuItem == [self nextWindowItem]) {
-		NSUInteger keyIndex = [[self windows] indexOfObject:[NSApp keyWindow]];
-		return keyIndex != NSNotFound && keyIndex < ([[self windows] count] - 1);
+		return keyIndex != NSNotFound && [[self windows] count] > 1;
 	}
 	return NO;
 }
 
 - (void)focusPreviousWindow {
-	NSUInteger previousIndex = [[self windows] indexOfObject:[NSApp keyWindow]] - 1;
+	NSInteger previousIndex = [[self windows] indexOfObject:[NSApp keyWindow]] - 1;
 	
-	if (previousIndex != NSNotFound) {
+	if (previousIndex != NSNotFound && previousIndex >= 0) {
 		[[[self windows] objectAtIndex:previousIndex] makeKeyAndOrderFront:NSApp];
+	}
+	else {
+		[[[self windows] lastObject] makeKeyAndOrderFront:NSApp];
 	}
 }
 
 - (void)focusNextWindow {
 	NSUInteger nextIndex = [[self windows] indexOfObject:[NSApp keyWindow]] + 1;
 	
-	if (nextIndex != NSNotFound) {
+	if (nextIndex != NSNotFound && nextIndex < [[self windows] count]) {
 		[[[self windows] objectAtIndex:nextIndex] makeKeyAndOrderFront:NSApp];
+	}
+	else {
+		[[[self windows] firstObject] makeKeyAndOrderFront:NSApp];
 	}
 }
 
