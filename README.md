@@ -15,21 +15,23 @@ With the help of these items you can quickly cycle through multiple open Xcode w
 
 Use either one of the two new menu items:
 
- | |
----|---
-Window → Focus Previous Window|⌘⇧^
-Window → Focus Next Window|⌘^
+Menu Item|Shortcut QWERTZ|Shortcut QWERTY
+---|---|---
+Window → Focus Previous Window|⌘⇧^|⌘⇧§
+Window → Focus Next Window|⌘^|⌘⇧§
 
-*The shortcuts refer to the ISO QWERTZ keyboard layout. On QWERTY and other keyboard layouts the shortcut may differ.*
-*Always use the key left next to the "1" and below the "escape" keys.* 
+*On other keyboard layouts the shortcuts may differ. Always use the key left next to the "1" (below the "escape" key).*
+
+*The shortcuts refer to ISO keyboards, support for chinese, japanese and other keyboards is unknown.*
 
 ## Screenshot
 
-![LinkedLog](https://raw.githubusercontent.com/julian-weinert/FocusCycle/master/Screenshots/FocusCycle.png)
+![FocusCycle](https://raw.githubusercontent.com/julian-weinert/FocusCycle/master/Screenshots/FocusCycle.png)
 
 
 ## Bugs and limitations
 
+- Support for chinese, japanese and other keyboards is unknown
 
 ### Pull requests
 
