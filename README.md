@@ -27,7 +27,7 @@ Window → Focus Next Window|⌘^|⌘⇧§
 
 ## Screenshot
 
-![LinkedLog](https://raw.githubusercontent.com/julian-weinert/FocusCycle/master/Screenshots/FocusCycle.png)
+![FocusCycle](https://raw.githubusercontent.com/julian-weinert/FocusCycle/master/Screenshots/FocusCycle.png)
 
 
 ## Bugs and limitations
