@@ -15,7 +15,7 @@ With the help of these items you can quickly cycle through multiple open Xcode w
 
 Use either one of the two new menu items:
 
- | |
+Menu Item|Shortcut|
 ---|---
 Window → Focus Previous Window|⌘⇧^
 Window → Focus Next Window|⌘^
