@@ -9,7 +9,7 @@ With the help of these items you can quickly cycle through multiple open Xcode w
 1. Build the project to install the plugin. The plugin gets installed in `/Library/Application Support/Developer/Shared/Xcode/Plug-ins/FocusCycle.xcplugin`.
 2. Restart Xcode for the plugin to be activated.
 
-~~**Alternatively, install it using [Alcatraz plugin manager](https://github.com/supermarin/Alcatraz).**~~ (not yet)
+**Alternatively, install it using [Alcatraz plugin manager](https://github.com/supermarin/Alcatraz).**
 
 ## Usage
 
